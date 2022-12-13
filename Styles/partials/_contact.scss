@@ -1,0 +1,133 @@
+.contact-header {
+  background: url("/img/cristian-castillo-YD5Nzp9iQ5A-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.main-aside{
+  width: 100%;
+}
+.wrapper-contact {
+  @include flex($direction:column);
+}
+.content.contact {
+  position: absolute;
+}
+.main-contact {
+  @include flex();
+  width: 100%;
+  height: 500px;
+  background-color: #b2b4b2;
+  .find-us {
+    @include flex ($direction:column);
+    width: 100%;
+    div {
+      margin-top: 15px;
+    }
+    .info {
+      font-size: 24px;
+    }
+    .map {
+      margin-top: 15px;
+      iframe {
+        width: 250px;
+        height: 250px;
+      }
+    }
+    .social{
+      img {
+        height: 20px;
+      }
+    }
+  }
+}
+.aside {
+  width: 100%;
+  height: 600px;
+  background-color: $greyish2;
+    .form {
+    margin: 0 0 10px 0;
+    }
+    form {
+        width: 80%;
+        max-width: 500px;
+        min-width: 200px;
+        margin: 0 auto;
+        padding-bottom: 2em;
+      }
+      
+      fieldset {
+        border: none;
+        padding: 2rem 0;
+        border-bottom: 3px solid #3b3b4f;
+      }
+      
+      label {
+        display: block;
+        margin: 0.5rem 0;
+      }
+      
+      input,
+      textarea,
+      select {
+        margin: 10px 0 0 0;
+        width: 100%;
+        min-height: 2em;
+      }
+      
+      input, textarea {
+        background-color: #fff;
+        border: 1px solid #fff;
+        color: #ffffff;
+      }
+      
+      .inline {
+        width: unset;
+        margin: 0 0.5em 0 0;
+        vertical-align: middle;
+      }
+      
+      input[type="submit"] {
+        display: block;
+        width: 60%;
+        margin: 1em auto;
+        height: 2em;
+        font-size: 1.1rem;
+        background-color: #3b3b4f;
+        border-color: white;
+        min-width: 200px;
+        border-radius: 5px;
+      }
+}
+@media (min-width:768px) {
+  .main-contact {
+    .main-aside {
+      width: 100%;
+    
+    .find-us {
+      .map {
+        iframe {
+        width: 400px;
+        height: 300px;
+        }
+      }
+    }
+  }
+}
+}
+@media (min-width: 992px) {
+  .wrapper-contact {
+    .main-aside{
+      @include flex ();
+      width: 100%;
+    }
+    .main-contact {
+      width: 40%;
+      height: 600px;
+    }
+    aside {
+      width: 50%;
+    }
+}
+}
+
+

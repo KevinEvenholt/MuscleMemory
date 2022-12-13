@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper {
+    min-height: calc(100vh - 70px);
+  }
+  h1,
+  h2,
+  h3 {
+    @include font($font:"Oswald");
+  }
+  p {
+    @include font($font:"Roboto");
+    letter-spacing: 0.2px;
+  }
+  a {
+    @include font($font:"Noto Sans");
+  }
+
+  
+  

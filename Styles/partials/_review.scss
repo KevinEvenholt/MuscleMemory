@@ -1,0 +1,52 @@
+.review-header {
+    background: url("/img/garrett-butler-UrJ-fn2iRUM-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 4px 4px 0px #00000040,inset 0 0 0 1000px rgba(0,0,0,.5);
+}
+.review-main {
+    @include flex ();
+    .empty {
+        margin: 100px;
+    }
+    .pic {
+        img {
+            margin: 0 10px 0 5px;
+            width: 100px;
+            border-radius: 10px;
+        }
+    }
+    .review {
+        display: flex;
+        margin: 50px 0 50px 0;
+    }
+    .words {
+        width: 50%;
+        margin-right: 10px;
+    }
+    .name {
+        margin-top: 10px;
+    }
+}
+@media (min-width:768px) {
+    .words {
+        margin-left: 30px;
+    }
+    .words.words1 {
+        margin-left: 7em;
+    }
+    .words.words2 {
+        margin-left: 4em;
+    }
+}
+@media (min-width:992px) {
+    .words {
+        margin-left: 80px;
+    }
+    .words.words1 {
+        margin-left: 10em;
+    }
+    .words.words2 {
+        margin-left: 7em;
+    }
+}

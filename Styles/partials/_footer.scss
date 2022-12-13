@@ -1,0 +1,84 @@
+footer {
+    @include flex();
+    height: 150px;   
+    background: #343735;
+    .header-logo {
+        font-size: 2rem;
+        color: $secondaryColor;
+        text-decoration: none;
+    }
+    div {
+        display: flex;
+    }
+    li {
+        list-style: none;
+    }
+    .footer-logo {
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 45%;
+        }
+        p {
+            margin-top: 10px;
+            color: $Color;
+        } 
+    }
+    .footer-img {
+        margin-right: 20px;
+    }
+    .footer-navbar {
+        @include flex ($justify:space-between);
+        min-height: 70px;
+        padding: 0 10px;
+    }
+    .footer-nav-menu {
+        @include flex();
+        flex-wrap: wrap;
+    }
+    .footer-nav-link {
+        color: $Color;
+        text-decoration: none;
+        font-size: 16px;
+        letter-spacing: 1px;
+        font-weight: 300;
+        text-transform: uppercase;
+        position: relative;
+        padding: 3px 0;
+        &.is-current {
+            color: coral;
+        }
+    }
+    .footer-nav-link::after {
+        content: "";
+        width: 100%;
+        height: 2px;
+        background-color: white;
+        position: absolute;
+        left: 0;
+        transform: scaleX(0);
+        transition: transform 0.5s;
+    }
+    .footer-nav-link::after {
+        bottom: 0;
+        transform-origin: left;
+    }
+    .footer-nav-link:hover::after {
+        transform: scaleX(1);
+    }
+    .footer-nav-item {
+        padding: 6px;
+       }
+    }
+    @media (min-width: 992px) {
+     footer {
+         @include flex ($justify:space-evenly);
+         .footer-logo {
+            p {
+                align-self: flex-start;
+                margin: 0;
+            }
+        }
+     }
+    }

@@ -1,0 +1,163 @@
+.products-header {
+    background: url("/img/sven-mieke-jO6vBWX9h9Y-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 4px 4px 0px #00000040,inset 0 0 0 1000px rgba(0,0,0,.5);
+    min-height: 500px;
+    .content.products {
+        width: 100%;
+        text-align: center;
+    }
+}
+.online {
+    @include flex($direction:column);
+    .online-div {
+        @include flex();
+        width: 100%;
+        height: 300px;
+        background-color: $greyish;
+        &:nth-child(odd) {
+            background-color: $greyish2;
+        }
+        .img.img1 {
+            @include flex();
+            img {
+                margin-left: 27px;
+                height:150px;
+            }
+        }
+        .img {
+            @include flex();
+            width: 40%;
+            img {
+                margin-left: 15px;
+                height:150px;
+            }
+        }
+        .online-text {
+            width: 60%;
+        }
+    }
+    
+}
+.product-section {
+    @include flex($direction:column, $justify:space-around);
+    background: url("/img/theme-photos-OwSk7UUvgBw-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    box-shadow: 0px 4px 4px 0px #00000040,inset 0 0 0 1000px rgba(0,0,0,.5);
+    .our-pt {
+        h2 {
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+        }
+        p{
+            margin: 0 30px 0 30px;
+            color: white;
+        }
+    }
+    .to-about {
+        a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            background-color: #017fb9;
+            border-radius: 10px;
+        }
+    }
+}
+.booking {
+    @include flex ($direction:column);
+    background-color: $greyish2;
+    width: 100%;
+    height: 800px;
+    h2 {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .form {
+        width: 100%;
+    form {
+        width: 80%;
+        max-width: 500px;
+        min-width: 200px;
+        margin: 0 auto;
+        padding-bottom: 2em;
+      }
+      
+      fieldset {
+        border: none;
+        padding: 2rem 0;
+        border-bottom: 3px solid #3b3b4f;
+      }
+      
+      label {
+        display: block;
+        margin: 0.5rem 0;
+      }
+      input,
+      textarea,
+      select {
+        margin: 10px 0 0 0;
+        width: 100%;
+        min-height: 2em;
+      }
+      
+      input, textarea {
+        background-color: #fff;
+        border: 1.5px solid black;
+        border-radius: 2px;
+        color: #ffffff;
+        padding-left: 5px;
+      }
+      
+      .inline {
+        width: unset;
+        margin: 0 0.5em 0 0;
+        vertical-align: middle;
+      }
+      
+      input[type="submit"] {
+        display: block;
+        width: 60%;
+        margin: 1em auto;
+        height: 2em;
+        font-size: 1.1rem;
+        background-color: #017fb9;
+        border-color: white;
+        min-width: 200px;
+        border-radius: 5px;
+      }
+    }
+}
+@media (min-width: 992px) {
+    .products-header {
+        min-height: 700px;
+    }
+}
+@media (min-width:1500px) {
+    .online {
+        h2 {
+            font-size: 2.5em;
+        }
+        h3 {
+            font-size: 2em;
+        }
+        p {
+            font-size: 1.4em;
+        }
+    }
+    .product-section {
+        h2 {
+            font-size: 2.5em;
+        }
+        p {
+            font-size: 1.4em;
+        }
+        a {
+            font-size: 1.3em;
+        }
+    }
+}
