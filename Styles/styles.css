@@ -54,7 +54,7 @@ header {
   position: relative;
   width: 100%;
   min-height: 100vh;
-  background: url("/img/bg2.jpg");
+  background: url("../img/bg2.jpg");
   background-size: cover;
   background-position: center;
   padding: 40px;
@@ -153,6 +153,7 @@ header .navbar .hamburger.active .ham:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
 }
 header .content {
+  margin-top: 50px;
   max-width: 600px;
 }
 header .content .contentBx h1 {
@@ -225,10 +226,10 @@ header .content .contentBx a {
 
 @media (min-width: 1500px) {
   header .content .contentBx h1 {
-    font-size: 6em;
+    font-size: 4em;
   }
   header .content .contentBx p {
-    font-size: 1.8em;
+    font-size: 1.4em;
   }
   header .content .contentBx a {
     padding: 20px 40px;
@@ -800,6 +801,12 @@ main .chooseWorkout .workout-text h3 {
     margin-right: 15px;
   }
 }
+@media (min-width: 1500px) {
+  .about-main .trainer-card {
+    margin-right: 150px;
+    margin-top: 20px;
+  }
+}
 .review-header {
   background: url("/img/garrett-butler-UrJ-fn2iRUM-unsplash.jpg");
   background-size: cover;
@@ -1024,5 +1031,17 @@ main .chooseWorkout .workout-text h3 {
   }
   .product-section a {
     font-size: 1.3em;
+  }
+  .booking {
+    height: 1000px;
+  }
+  .booking .form form {
+    max-width: 700px;
+  }
+  .booking .form form input {
+    height: 40px;
+  }
+  .booking .form form select {
+    height: 40px;
   }
 }/*# sourceMappingURL=styles.css.map */

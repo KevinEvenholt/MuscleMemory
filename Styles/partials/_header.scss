@@ -3,7 +3,7 @@ header {
     position: relative;
     width: 100%;
     min-height: 100vh;
-    background: url("/img/bg2.jpg");
+    background: url("../img/bg2.jpg");
     background-size: cover;
     background-position: center;
     padding: 40px;
@@ -96,6 +96,7 @@ header {
         }
         }
         .content {
+            margin-top: 50px;
             max-width: 600px;
             .contentBx {
                 h1 {
@@ -175,10 +176,10 @@ header {
             .content {
                 .contentBx {
                     h1 {
-                        font-size: 6em;
+                        font-size: 4em;
                     }
                     p {
-                        font-size: 1.8em;
+                        font-size: 1.4em;
                     }
                     a {
                         padding: 20px 40px;
