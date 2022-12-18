@@ -1,5 +1,5 @@
 .products-header {
-    background: url("/img/sven-mieke-jO6vBWX9h9Y-unsplash.jpg");
+    background: url("../img/sven-mieke-jO6vBWX9h9Y-unsplash.jpg");
     background-size: cover;
     background-position: center;
     box-shadow: 0px 4px 4px 0px #00000040,inset 0 0 0 1000px rgba(0,0,0,.5);
@@ -42,7 +42,7 @@
 }
 .product-section {
     @include flex($direction:column, $justify:space-around);
-    background: url("/img/theme-photos-OwSk7UUvgBw-unsplash.jpg");
+    background: url("../img/theme-photos-OwSk7UUvgBw-unsplash.jpg");
     background-size: cover;
     background-position: center;
     height: 300px;

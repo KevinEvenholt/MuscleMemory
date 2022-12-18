@@ -332,7 +332,7 @@ footer .footer-nav-item {
   }
 }
 .contact-header {
-  background: url("/img/cristian-castillo-YD5Nzp9iQ5A-unsplash.jpg");
+  background: url("../img/cristian-castillo-YD5Nzp9iQ5A-unsplash.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -735,7 +735,7 @@ main .chooseWorkout .workout-text h3 {
   }
 }
 .about-header {
-  background: url("/img/anastase-maragos-9dzWZQWZMdE-unsplash.jpg");
+  background: url("../img/anastase-maragos-9dzWZQWZMdE-unsplash.jpg");
   background-size: cover;
   background-position: center;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922), inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
@@ -808,7 +808,7 @@ main .chooseWorkout .workout-text h3 {
   }
 }
 .review-header {
-  background: url("/img/garrett-butler-UrJ-fn2iRUM-unsplash.jpg");
+  background: url("../img/garrett-butler-UrJ-fn2iRUM-unsplash.jpg");
   background-size: cover;
   background-position: center;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922), inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
@@ -863,7 +863,7 @@ main .chooseWorkout .workout-text h3 {
   }
 }
 .products-header {
-  background: url("/img/sven-mieke-jO6vBWX9h9Y-unsplash.jpg");
+  background: url("../img/sven-mieke-jO6vBWX9h9Y-unsplash.jpg");
   background-size: cover;
   background-position: center;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922), inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
@@ -922,7 +922,7 @@ main .chooseWorkout .workout-text h3 {
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
-  background: url("/img/theme-photos-OwSk7UUvgBw-unsplash.jpg");
+  background: url("../img/theme-photos-OwSk7UUvgBw-unsplash.jpg");
   background-size: cover;
   background-position: center;
   height: 300px;
